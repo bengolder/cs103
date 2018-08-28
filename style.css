@@ -1,0 +1,27 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: Garamond, "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+
+main {
+	max-width: 30em;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+
+ol {
+	list-style-type: lower-roman;
+}
+
+.proof {
+	list-style-type: none;
+	padding-left: 1em;
+}
+.proof li + li {
+	margin-top: .25em;
+}

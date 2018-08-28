@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <title>Ben Golder | CS103 Notes</title>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        displayAlign: "left",
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+      });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+
+  <main>
+    <h1>CS103 — Problem Set 1</h1>
+    <h2>Notes on Proofs</h2>
+    <p>
+      Proofs begin with definitions and assumptions.
+      The statement we are trying to prove is the <em>theorem</em>.
+
+    </p>
+    <h3>Example proof</h3>
+    <p>
+      <strong>Theorem:</strong> If $n$ is an integer, then $n^2$ is even.
+    </p>
+    <ul class="proof"> 
+      <li>Let $n$ be an even integer.</li>
+      <li>Since $n$ is even, there is some integer $k$ such that $n = 2k$.</li>
+      <li>This means that \( n^2 = (2k)^2 = 4k^2 = 2(2k^2) \)</li>
+      <li>From this, we see that there is an integer $m$ (namely, $2k^2$) where $n^2 = 2m$.</li>
+      <li>Therefore, $n^2$ is even. ■</li>
+    </ul>
+
+    <h2>Checkpoint Problem Two: Multiples of Three</h2>
+    <p>
+      <em>For every integer n, n is a multiple of three if and only if
+      n<sup>2</sup> is a multiple of three.</em>
+    </p>
+    <p>Prove the following statements:</p>
+    <ul>
+      <li>
+        <em>For any integer n, if n is a multiple of three, then n<sup>2</sup> is a multiple of three.</em>
+      </li>
+      <li>
+        <em>For any integer n, if n<sup>2</sup> is a multiple of three, then n is a multiple of three.</em>
+      </li>
+    </ul>
+    <p>Prove the first with a direct proof. Prove the second using proof by contrapositive. Make sure you state the contrapositive explicitly before proving it.
+    Prove, by contradiction, that \( \sqrt 3 \) is irrational.</p>
+
+    <h3>Notes on</h3>
+
+    <h2>Problem 1</h2>
+
+    <ul class="proof">
+      <li>
+        
+      </li>
+    </ul>
+
+    <ol>
+      <li>\[ A = B. \]
+        \[
+          \{ 1, 2, 3, 4 \} = \{ 2, 2, 2, 1, 4, 3 \}
+      \]</li>
+      <li>\[
+        D \notin A.
+        \]
+        \[ D \subseteq A
+      \]</li>
+      <li>\[
+        D \in ℘(A)\]
+        \[ D \not\subseteq ℘(A)
+      \]</li>
+      <li>\[ A \cap C = \{ 1 \} \] \[
+        A \cup C = \{ 1, 2, 3, 4, \{ 2 \}, \{ \{ 3, 4 \} \} \} \]
+        \[ A \Delta C = \{ 2, 3, 4, \{ 2 \}, \{ \{ 3, 4 \} \} \} \]
+      </li>
+      <li>\[
+        A - C = \{ 2, 3, 4 \}
+      \]
+      \[
+        \{ A - C \} = \{ \{ 2, 3, 4 \} \}
+      \]
+      \[
+          A - C \neq \{ A - C \}
+      \]
+      </li>
+      <li>\[ |B| = 4 \]
+        \[ |E| = \aleph_0 \]
+        \[ |F| = 1 \]
+      </li>
+      <li>\[
+        E - A = \{ x \, | \, x \in \mathbb{N} \; and \; x \notin \{2, 3, 4 \} \}
+      \]
+      </li>
+    </ol>
+    
+
+    <h2>Problem 2</h2>
+
+    <ol>
+      <li>\[ Ø \cup \{ Ø \} = Ø \]
+      \[ Ø \cap \{ Ø \} = Ø \]
+      </li>
+      <li>\[ \{ Ø \} \cup \{ \{ Ø \} \} = \{ Ø, \{ Ø \} \} \]
+      \[ \{ Ø \} \cap \{ \{ Ø \} \} = Ø \]
+      </li>
+
+      <li>\[ |\{ Ø, \{ Ø \} \}| = 2 \]
+      </li>
+      <li>\[ ℘(℘(Ø)) = Ø \]
+      \[ ℘(℘(℘(Ø))) = Ø \]
+      </li>
+    </ol>
+
+  <h2>Problem 3</h2>
+
+  <ol>
+    <li>
+      <p><strong>For all sets A, B, and C, if A ∈ B and B ∈ C, then A ∈ C.</strong></p>
+      ■
+    </li>
+  </ol>
+
+  </main>
+
+  </body>
+</html>
